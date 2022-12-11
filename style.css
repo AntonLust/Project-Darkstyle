@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Crimson Text", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  max-width: 1050px;
+  margin: 1rem;
+}
+
+
+/* ======================NAVBAR START====================== */
+
+h1{
+  color: rgb(253, 68, 50);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+
+.container {
+  max-width: 100%;
+}
+
+nav{
+  grid-area: navbar;
+}
+
+.navbar {
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+  width: 100%;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 5px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+
+  margin-left: 16px;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 5px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  color: white;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* =================Open Burgermenu============== */
+
+.navbar .menu-items {
+  padding-top: 120px;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  background-color: black;
+
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.seal img{
+  padding-right: 1rem;
+  width: 6rem;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.2rem;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo {
+  display: none;
+}
+
+
+
+/* ===========================SECTIONS========================= */
+
+section{
+  margin-bottom: 1rem;
+}
+
+.fifthsec, .sixthsec, .seventhsec, .eighthsec{
+  display: none;
+}
+
+img{
+  width: 100%;
+}
+
+p, blockquote{
+  line-height: 20px;
+  font-size: 1.5rem;
+  margin: 20px;
+  text-align: right;
+}
+
+h2{
+  text-align: right;
+  margin-right: 20px;
+  font-size: 2rem;
+}
+
+/* ==================================FORM============================= */
+
+form{
+  padding: 2rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%; 
+  padding: 10px;
+  background-color: rgb(36, 36, 36); 
+  border: 1px solid rgb(47, 47, 47);
+  color: white; 
+  border-radius: 4px; 
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 1.5rem;
+  }
+  
+  input[type=submit] {
+  background-color: #fd4432;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  }
+  
+
+  input[type=submit]:hover {
+    background-color: #fd4332d2;
+  }
+
+  label{
+    font-size: 1.5rem;
+  }
+
+
+  /* ========================FOOTER========================== */
+footer{
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  margin-bottom: 1vh;
+  grid-area: footer;
+}
+
+footer a{
+  font-size: 2rem;
+  align-self: center;
+  color: white;
+}
+
+/* =========================FOOTER END======================== */
+/* =========================MEDIA QUERY====================== */
+
+@media only screen and (min-width: 768px){
+
+/* =========================GRID============================= */
+
+body{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 20vw 30vw 30vw;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: 
+  "navbar main main "
+  "navbar main main "
+  "navbar main main "
+  "navbar main main "
+  "navbar main main "
+  "navbar footer footer "
+  ;
+}
+
+main{
+  row-gap: 2rem;
+  display: grid;
+  grid-area: main;
+  border-left: 1px solid rgb(182, 182, 182);
+  border-right: 1px solid rgb(182, 182, 182);
+  border-bottom: 1px solid rgb(182, 182, 182);
+  grid-template-columns: 30vw 30vw;
+  grid-template-rows: repeat(5,auto);
+  grid-template-areas: 
+  "firstsec fifthsec "
+  "sixthsec secondsec "
+  "thirdsec seventhsec "
+  "eighthsec fourthsec "
+  "form form "
+  ;
+
+}
+/* ======================GRID END======================== */
+
+  /* =====================NAVBAR=========================== */
+
+  .navbar .checkbox{
+    display: none;
+  }
+
+  .navbar .menu-items {
+    width: 20vw;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    transition: none;
+    text-align: right;
+    /* border: 1px solid yellow; */
+    margin-left: 0;
+    padding-right: 3rem;
+    position: fixed;
+    padding-top: 1rem;
+
+
+  }
+
+  .navbar .nav-container a{
+    font-size: 1.5rem;
+  }
+
+  .nav-container .hamburger-lines .line {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo h1{
+    font-size: 3rem;
+  }
+
+  .seal img{
+    padding-right: unset;
+  }
+
+  /* ======================NAVBAR ENDE================================ */
+
+/* ========================ALL SECTIONS================================ */  
+
+section{
+  max-width: 300px;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+.firstsec{
+  grid-area: firstsec;
+}
+
+.secondsec{
+  grid-area: secondsec;
+}
+
+.thirdsec{
+  grid-area: thirdsec;
+}
+
+.fourthsec{
+  grid-area: fourthsec;
+}
+
+.fifthsec, .sixthsec, .seventhsec, .eighthsec{
+  display: block;
+}
+
+.fifthsec p, .seventhsec p{
+  opacity: 0;
+}
+
+/* =================HIDDEN SECTIONS IN MOBILE====================== */
+
+.fifthsec {
+  position: relative;
+  border: 1px solid #fd4432;
+  grid-area: fifthsec;
+}
+
+.project{
+  position: absolute;
+  writing-mode:vertical-lr;
+  left: 5rem;
+  top: 6rem;
+  font-size: 6rem;
+}
+
+.project_de{
+  position: absolute;
+  font-size: 1.1rem;
+  writing-mode:vertical-lr;
+  text-transform: full-width;
+  left: 12rem;
+  top: 12rem;
+}
+
+.sixthsec{
+  border: 1px solid #fd4432;;
+  font-size: 1.1rem;
+  grid-area: sixthsec;
+}
+
+.seventhsec{
+  position: relative;
+  grid-area: seventhsec;
+}
+
+.seventhsec{
+  border: 1px solid #fd4432;;
+}
+
+.philosophy{
+  position: absolute;
+  writing-mode:vertical-lr;
+  left: 5rem;
+  top: 6rem;
+  font-size: 6rem;
+}
+
+.philosophy_de{
+  position: absolute;
+  font-size: 1.1rem;
+  writing-mode:vertical-lr;
+  text-transform: full-width;
+  left: 12rem;
+  top: 12rem;
+}
+
+.eighthsec{
+  border: 1px solid #fd4432;;
+  font-size: 1.1rem;
+  grid-area: eighthsec;
+}
+
+/* ====================SECTION EFFECTS ====================== */
+
+.fifthsec, .sixthsec, .seventhsec, .eighthsec{
+  display:block;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #fd4332d2;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.fifthsec:hover {
+  box-shadow: inset 0 655px 0 0 #fd4332d2;
+}
+
+.sixthsec:hover {
+  box-shadow: inset 298px 0 0 0 #fd4332d2;
+}
+
+.seventhsec:hover {
+  box-shadow: inset -298px 0 0 0 #fd4332d2;
+}
+
+.eighthsec:hover {
+  box-shadow: inset 0 -655px 0 0 #fd4332d2;
+}
+
+/* ===========================FORM=========================== */
+
+form{
+  grid-area: form;
+}
+
+}
