@@ -1,5 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+/* crimson-text-regular - latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('fonts/crimson-text-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/crimson-text-v19-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
+/* crimson-text-600 - latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('fonts/crimson-text-v19-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/crimson-text-v19-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* crimson-text-700 - latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('fonts/crimson-text-v19-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/crimson-text-v19-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 * {
   margin: 0;
@@ -182,16 +209,15 @@ nav{
 
 
 section{
-    border: 1px solid red;
+    border: 1px solid #fd4432;
         max-width: 200px;
         min-height: 600px;
-        margin: 0 auto;
+        margin: 1rem auto;
 }
 
 h2{
     text-align: center;
     font-size: 3.5rem;
-    color: rgba(255, 255, 255, 0.6);
     text-shadow: 2px 8px 6px rgba(254, 0, 0, 0.2),
      0px -5px 35px rgba(254, 5, 5, 0.3);
   }
@@ -214,13 +240,6 @@ footer p{
     font-size: 1.5rem;
     text-align: center;
 }
-
-   /* footer a{
-    font-size: 2rem;
-    align-self: center;
-    color: white;
-    text-align: center;
-  }  */
 
 /* =========================MEDIA QUERY================ */
 

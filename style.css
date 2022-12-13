@@ -1,4 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+/* crimson-text-regular - latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('fonts/crimson-text-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/crimson-text-v19-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* crimson-text-600 - latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('fonts/crimson-text-v19-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/crimson-text-v19-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* crimson-text-700 - latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('fonts/crimson-text-v19-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/crimson-text-v19-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 
 * {
@@ -109,6 +137,14 @@ nav{
   color: white;
 }
 
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.2rem;
+}
+
+
 .nav-container .hamburger-lines .line1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
@@ -151,13 +187,6 @@ nav{
   width: 6rem;
 }
 
-.logo {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 1.2rem;
-}
-
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }
@@ -178,7 +207,7 @@ nav{
   display: none;
 }
 
-
+/* ==========================NAVBAR END======================== */
 
 /* ===========================SECTIONS========================= */
 
@@ -262,6 +291,7 @@ footer a{
 }
 
 /* =========================FOOTER END======================== */
+
 /* =========================MEDIA QUERY====================== */
 
 @media only screen and (min-width: 768px){
@@ -301,7 +331,7 @@ main{
   ;
 
 }
-/* ======================GRID END======================== */
+  /* ======================GRID END======================== */
 
   /* =====================NAVBAR=========================== */
 
@@ -316,7 +346,6 @@ main{
     flex-direction: column;
     transition: none;
     text-align: right;
-    /* border: 1px solid yellow; */
     margin-left: 0;
     padding-right: 3rem;
     position: fixed;
@@ -391,7 +420,7 @@ section{
   position: absolute;
   writing-mode:vertical-lr;
   left: 5rem;
-  top: 6rem;
+  top: 10rem;
   font-size: 6rem;
 }
 
@@ -401,7 +430,7 @@ section{
   writing-mode:vertical-lr;
   text-transform: full-width;
   left: 12rem;
-  top: 12rem;
+  top: 18rem;
 }
 
 .sixthsec{
@@ -423,7 +452,7 @@ section{
   position: absolute;
   writing-mode:vertical-lr;
   left: 5rem;
-  top: 6rem;
+  top: 10rem;
   font-size: 6rem;
 }
 
@@ -433,7 +462,7 @@ section{
   writing-mode:vertical-lr;
   text-transform: full-width;
   left: 12rem;
-  top: 12rem;
+  top: 18rem;
 }
 
 .eighthsec{
